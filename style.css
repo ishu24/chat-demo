@@ -7,3 +7,36 @@ html, body {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+body{
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main{
+  width: 500px;
+  margin:auto;
+  position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.logo{
+  font-size: 50px;
+  color:white;
+margin-bottom: 10px;
+}
+.tagline{
+  font-size: 24px;
+  color:white;
+}
+.button{
+  background-color: lightblue;
+  color:white;
+  border:none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: pink;
+  color:blue;
+}
