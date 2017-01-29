@@ -10,84 +10,39 @@
 <body>
 <div class="member-area">
   <div class="user-info">
-      Ishani vora
+      <span id="username"></span>
       <span class="logout">log out</span>
     </div>
-<div class="members">
-
-
-  <div class="member">
-    ishu
+<div class="members" id="members">
   </div>
-  <div class="member active">
-    Aditi
-  </div>
-  <div class="member">
-    riya
-  </div>
-  <div class="member">
-    divya
-  </div>
-</div>
 </div>
 <div class="message-area">
   <div class="chat-info">
     Aditi
   </div>
-  <div class="messages">
-    <div class="message">
-      hiiiiiiiiiiiiiiiiiiiiii!!!!!
-    </div>
-    <div class="message by-user">
-      how are you???
-    </div>
-    <div class="message">
-      i m fine
-    </div>
-    <div class="message by-user">
-      lalalallala
-    </div>
-    <div class="message">
-      hiiiiiiiiiiiiiiiiiiiiii!!!!!
-    </div>
-    <div class="message by-user">
-      how are you???
-    </div>
-    <div class="message">
-      i m fine
-    </div>
-    <div class="message by-user">
-      lalalallala
-    </div>
-    <div class="message">
-      hiiiiiiiiiiiiiiiiiiiiii!!!!!
-    </div>
-    <div class="message by-user">
-      how are you???
-    </div>
-    <div class="message">
-      i m fine
-    </div>
-    <div class="message by-user">
-      lalalallala
-    </div>
-    <div class="message">
-      hiiiiiiiiiiiiiiiiiiiiii!!!!!
-    </div>
-    <div class="message by-user">
-      how are you???
-    </div>
-    <div class="message">
-      i m fine
-    </div>
-    <div class="message by-user">
-      lalalallala
-    </div>
-</div>
+  <div class="messages" id="messages">
+  </div>
 <div class="chat-form">
-  <input type="text" class="chat-message" placeholder="write your message here"/>
+  <input type="hidden" id="chat-id"/>
+<input id="message-text" type="text" class="chat-message" placeholder="write your message here"/>
+<button id="send-button">send</button>
+</div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDttBQsnhxzlDvxR6mxiGL_L2mu3HkGEUo",
+    authDomain: "snappy-95e15.firebaseapp.com",
+    databaseURL: "https://snappy-95e15.firebaseio.com",
+    storageBucket: "snappy-95e15.appspot.com",
+    messagingSenderId: "732885473829"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script type="text/javascript" src="functions.js"></script>
 
-</div>
-</div>
+  <script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="chat.js"></script>
 </body>
 </html>
